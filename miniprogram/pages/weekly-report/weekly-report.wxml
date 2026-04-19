@@ -1,0 +1,46 @@
+<view class="container">
+  <loading-state wx:if="{{loading}}" />
+  <empty-state wx:elif="{{!report}}" text="这一周记录得还不多，再多记几个问题就能看到周报了" />
+
+  <view wx:else>
+    <view class="card">
+      <view class="section-title">本周问题总数</view>
+      <view class="big">{{report.questionCount}}</view>
+      <view>{{report.weekStartDate}} ~ {{report.weekEndDate}}</view>
+    </view>
+
+    <view class="card">
+      <view class="section-title">热门主题 Top3</view>
+      <view wx:for="{{report.topCategories}}" wx:key="category" class="row">
+        <text>{{item.category}}</text>
+        <text>{{item.count}}</text>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="section-title">重复问题</view>
+      <view wx:for="{{report.repeatedQuestions}}" wx:key="repeatGroupId" class="row col">
+        <text>{{item.normalizedQuestion}}</text>
+        <text>重复 {{item.count}} 次</text>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="section-title">精选问题</view>
+      <view
+        wx:for="{{report.highlightedQuestions}}"
+        wx:key="questionId"
+        class="link"
+        data-question-id="{{item.questionId}}"
+        bindtap="onOpenHighlight"
+      >
+        {{item.normalizedQuestion}}
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="section-title">家长建议</view>
+      <view wx:for="{{report.parentSuggestions}}" wx:key="*this" class="suggestion">- {{item}}</view>
+    </view>
+  </view>
+</view>

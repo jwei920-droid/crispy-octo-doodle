@@ -1,0 +1,19 @@
+{
+  "description": "儿童每日疑问 MVP",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.5.0",
+  "appid": "touristappid",
+  "projectname": "child-daily-questions",
+  "srcMiniprogramRoot": "",
+  "condition": {}
+}

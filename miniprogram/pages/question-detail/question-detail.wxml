@@ -1,0 +1,30 @@
+<view class="container">
+  <loading-state wx:if="{{loading}}" />
+  <empty-state wx:elif="{{!item}}" text="问题不存在或已删除" />
+
+  <view wx:else>
+    <view class="card">
+      <view class="title-row">
+        <view class="title">{{item.normalizedQuestion}}</view>
+        <button class="secondary-btn mini" bindtap="onToggleFavorite">{{item.isFavorite ? '已收藏' : '收藏'}}</button>
+      </view>
+      <view class="orig">孩子原话：{{item.childOriginalQuestion}}</view>
+      <view class="meta">{{item.createdAt}} · {{item.categoryTag || '其他'}} · {{item.sceneTag || '日常'}}</view>
+    </view>
+
+    <answer-block title="小朋友版" content="{{item.childAnswer}}" />
+    <answer-block title="故事版" content="{{item.storyAnswer}}" />
+    <answer-block title="家长提示版" content="{{item.parentTip}}" />
+
+    <view class="card">
+      <view class="section-title">插画</view>
+      <image wx:if="{{item.illustrationUrl}}" src="{{item.illustrationUrl}}" mode="aspectFill" class="illustration" />
+      <view wx:else class="placeholder">正在生成插画...</view>
+    </view>
+
+    <view class="read-actions">
+      <button class="secondary-btn" bindtap="onReadChild">读小朋友版</button>
+      <button class="secondary-btn" bindtap="onReadStory">读故事版</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+input { background: #f7f9ff; border-radius: 16rpx; padding: 16rpx; }
+.filters { margin-top: 12rpx; display: flex; gap: 10rpx; align-items: center; flex-wrap: wrap; }
+.pill { padding: 8rpx 16rpx; border-radius: 999rpx; background: #edf3ff; color: #4f5f7a; }
+.mini { font-size: 24rpx; }

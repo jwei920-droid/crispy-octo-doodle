@@ -1,0 +1,8 @@
+.welcome .title { font-size: 38rpx; font-weight: 700; }
+.desc { margin-top: 8rpx; color: #62708a; display: block; }
+.input-box { margin-top: 16rpx; }
+.actions { display: flex; gap: 12rpx; margin-bottom: 12rpx; }
+input { background: #f7f9ff; border-radius: 16rpx; padding: 16rpx; margin-bottom: 12rpx; }
+.stat { margin-top: 16rpx; }
+.shortcut { margin: 16rpx 0; display: flex; gap: 12rpx; }
+.error { color: #b14f4f; text-align: center; padding: 20rpx; }

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="card">
+    <input placeholder="搜索关键词" value="{{keyword}}" bindinput="onKeywordInput" />
+    <view class="filters">
+      <picker range="{{categories}}" bindchange="onCategoryChange">
+        <view class="pill">分类：{{categoryTag || '全部'}}</view>
+      </picker>
+      <view class="pill" bindtap="onToggleFavoriteFilter">{{favoriteOnly ? '只看收藏' : '全部记录'}}</view>
+      <button class="secondary-btn mini" bindtap="onSearch">搜索</button>
+    </view>
+  </view>
+
+  <loading-state wx:if="{{loading}}" />
+  <empty-state wx:elif="{{items.length === 0}}" text="没有找到相关问题" />
+  <block wx:else>
+    <question-card wx:for="{{items}}" wx:key="questionId" item="{{item}}" bind:cardtap="onCardTap" bind:favorite="onCardFavorite" />
+  </block>
+</view>

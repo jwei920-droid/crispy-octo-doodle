@@ -1,0 +1,4 @@
+<view class="card answer-block">
+  <view class="section-title">{{title}}</view>
+  <text class="content">{{content || '内容生成中...'}}</text>
+</view>

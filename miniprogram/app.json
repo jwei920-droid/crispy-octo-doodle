@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/question-detail/question-detail",
+    "pages/history/history",
+    "pages/weekly-report/weekly-report"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFF6E8",
+    "navigationBarTitleText": "儿童每日疑问",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F8FAFF",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
