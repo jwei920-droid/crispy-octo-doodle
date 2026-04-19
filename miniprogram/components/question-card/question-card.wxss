@@ -1,0 +1,6 @@
+.question-card { margin-bottom: 16rpx; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; }
+.title { font-size: 30rpx; font-weight: 600; max-width: 86%; }
+.favorite { font-size: 36rpx; color: #ff9f3d; }
+.sub { margin-top: 10rpx; color: #566; }
+.meta { margin-top: 12rpx; display: flex; justify-content: space-between; color: #8892a6; font-size: 24rpx; }

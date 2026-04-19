@@ -1,0 +1,11 @@
+<view class="card question-card" bindtap="onTap">
+  <view class="header">
+    <text class="title">{{item.normalizedQuestion}}</text>
+    <text class="favorite" catchtap="onToggleFavorite">{{item.isFavorite ? '★' : '☆'}}</text>
+  </view>
+  <text class="sub">{{item.childOriginalQuestion}}</text>
+  <view class="meta">
+    <text>{{item.categoryTag || '其他'}}</text>
+    <text>{{item.createdAt}}</text>
+  </view>
+</view>

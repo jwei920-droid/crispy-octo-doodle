@@ -1,0 +1,6 @@
+.card { margin-bottom: 16rpx; }
+.big { font-size: 64rpx; font-weight: 700; color: #ff9f3d; }
+.row { display: flex; justify-content: space-between; margin-top: 8rpx; }
+.col { flex-direction: column; gap: 4rpx; }
+.link { color: #3e6fd4; margin-bottom: 8rpx; }
+.suggestion { margin-bottom: 8rpx; color: #455; }

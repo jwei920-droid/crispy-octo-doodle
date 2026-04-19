@@ -1,0 +1,41 @@
+page {
+  background: #f8faff;
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.container {
+  padding: 24rpx;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+}
+
+.primary-btn {
+  background: #ffb86b;
+  color: #2f2f2f;
+  border-radius: 999rpx;
+}
+
+.secondary-btn {
+  background: #ffffff;
+  border: 1rpx solid #dce7ff;
+  color: #3f4c6b;
+  border-radius: 999rpx;
+}
+
+.danger-btn {
+  background: #ffdede;
+  color: #9c3f3f;
+  border-radius: 999rpx;
+}
